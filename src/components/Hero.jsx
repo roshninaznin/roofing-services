@@ -1,8 +1,12 @@
+import heroImg from "/images/hero.png";
 import "../styles/Hero.css";
 
 export default function Hero() {
   return (
     <section className="hero">
+          <img src={heroImg} alt="Hero" className="hero-bg" />
+      <div className="hero-overlay"></div>
+
       {/* Navbar */}
       <nav className="hero-nav">
         <div className="nav-left">
