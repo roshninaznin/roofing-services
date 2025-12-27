@@ -1,0 +1,198 @@
+.quote-section {
+  background-color: #f7f7f7;
+min-height: 100vh;
+  width: 100%;
+  padding: 100px 80px;  font-family: 'Inter', sans-serif;
+}
+
+.quote-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.quote-info {
+  flex: 1;
+}
+
+.quote-info h1 {
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.benefit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  background: #3bb76d;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.benefit-item h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+}
+
+.benefit-item p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.why-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 350px;
+}
+
+.why-box h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.why-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-box li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.why-box li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #888;
+}
+
+.quote-form-card {
+  flex: 1;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.quote-form-card h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.quote-form-card p {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  flex: 1;
+  background-color: white;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #4c4b4b;
+  color: #212121;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+}
+
+.phone-input {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-input select {
+  width: 80px;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 0.85rem;
+  color: #666;
+}
+.checkbox-group input{
+  background: #ffffff;
+  border: 1px solid rgb(247, 3, 3);
+}
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: #3bb76d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .quote-container {
+    flex-direction: column;
+  }
+}

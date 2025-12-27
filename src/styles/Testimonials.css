@@ -1,0 +1,162 @@
+.testimonials-section {
+min-height: 100vh;
+  width: 100%;
+  padding: 100px 80px;  background-color: #f7f7f7;
+  font-family: 'Inter', sans-serif;
+}
+
+.testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.header-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.header-left p {
+  color: #888;
+  max-width: 650px;
+  line-height: 1.5;
+}
+
+.view-all-btn {
+  background: black;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  color: black;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.star-rating {
+  margin-bottom: 20px;
+}
+
+.star-icon {
+  color: #ff9800;
+  background: #fff3e0;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.testimonial-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-body {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 20px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #111;
+}
+
+.user-location {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.testimonials-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+}
+
+.pagination {
+  color: black;
+  font-weight: 600;
+}
+
+.pagination small {
+  color: #b8aaaa;
+  font-weight: 400;
+}
+
+.nav-arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow-btn {
+  color: black;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.arrow-btn.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
