@@ -7,7 +7,7 @@
       rgba(24, 28, 41, 0.85),
       rgba(24, 28, 41, 0.3)
     ),
-    url("./images/hero.png") center/cover no-repeat;
+    url("/images/hero.png") center/cover no-repeat;
   color: white;
   position: relative;
   padding: 0 80px;
@@ -88,7 +88,6 @@
   margin-bottom: 40px;
 }
 
-/* ================= BUTTONS ================= */
 
 .hero-actions {
   display: flex;
