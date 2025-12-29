@@ -1,10 +1,10 @@
 .services-section { 
   min-height: 100vh;
   width: 100%;
-  padding: clamp(60px, 6vw, 100px) clamp(20px, 6vw, 80px);
+  padding: 100px 80px;
   background: #ffffff;
-  font-family: 'Inter', sans-serif;
 }
+
 
 .services-header {
   max-width: 1200px;
@@ -12,13 +12,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 .services-header h2 {
   color: black;
-  font-size: clamp(24px, 4vw, 44px);
+  font-size: 44px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -28,12 +26,12 @@
 }
 
 .services-text h4 {
-  font-size: clamp(14px, 1.5vw, 16px);
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
 .services-text p {
-  font-size: clamp(13px, 1.5vw, 15px);
+  font-size: 15px;
   line-height: 1.6;
   color: #666;
 }
@@ -45,40 +43,39 @@
   border-top: 1px solid #ddd;
 }
 
+
 .services-cards {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(20px, 3vw, 40px);
+  gap: 40px;
 }
 
 .service-card {
   background: white;
-  padding: 0;
-  border-radius: 20px;
 }
 
 .service-card img {
   width: 100%;
-  height: auto;
-  max-height: 220px;
+  height: 220px;
   border-radius: 20px;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
 .service-card h3 {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .service-card p {
-  font-size: clamp(12px, 1.5vw, 14px);
+  font-size: 14px;
   color: #555;
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
 
 .btn-primary {
   background: #3fc36d;
@@ -98,50 +95,4 @@
   border-radius: 30px;
   font-size: 14px;
   cursor: pointer;
-}
-
-
-@media (max-width: 1024px) {
-  .services-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-
-  .services-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 768px) {
-  .services-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .services-header h2 {
-    font-size: clamp(20px, 5vw, 32px);
-  }
-
-  .services-text h4 {
-    font-size: 14px;
-  }
-
-  .services-text p {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  .services-section {
-    padding: 50px 15px;
-  }
-
-  .service-card img {
-    max-height: 200px;
-  }
-
-  .btn-primary, .btn-outline {
-    padding: 10px 20px;
-    font-size: 13px;
-  }
 }
