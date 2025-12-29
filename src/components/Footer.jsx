@@ -2,6 +2,7 @@ import "../styles/Footer.css";
 
 export default function Footer() {
   return (
+    <section id="footer-section" className="footer-section">
     <footer className="footer-container">
       <div className="footer-top">
         <div className="footer-brand">
@@ -46,5 +47,6 @@ export default function Footer() {
         <p>2025 "RoofFixer" All Rights Received</p>
       </div>
     </footer>
+    </section>
   );
 }
