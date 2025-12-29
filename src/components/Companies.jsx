@@ -9,7 +9,7 @@ const companyData = [
 
 export default function Companies() {
   return (
-    <section className="companies-section">
+    <section id="companies-section" className="companies-section">
       <div className="header-text">
         <h2>Top-Rated Roofing Companies</h2>
         <p>Compare verified contractors with proven track records. All companies are licensed, insured, and ready to serve you.</p>
