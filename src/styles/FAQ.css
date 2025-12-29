@@ -107,9 +107,7 @@
   margin: 0;
 }
 
-/* ================= RESPONSIVE ================= */
 
-/* Medium Tablets */
 @media (max-width: 992px) {
   .faq-container {
     flex-direction: column;
@@ -121,7 +119,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .faq-card {
     padding: clamp(12px, 3vw, 20px);
@@ -136,7 +133,6 @@
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .faq-section {
     padding: 40px 15px;
