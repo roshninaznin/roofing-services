@@ -1,7 +1,8 @@
-.faq-section {
-min-height: 100vh;
+.faq-section { 
+  min-height: 100vh;
   width: 100%;
-  padding: 100px 80px;  background-color: #fff;
+  padding: clamp(50px, 8vw, 100px) clamp(20px, 5vw, 80px);
+  background-color: #fff;
   font-family: 'Inter', sans-serif;
 }
 
@@ -9,12 +10,14 @@ min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  gap: 80px;
+  gap: clamp(30px, 4vw, 80px);
+  flex-wrap: wrap;
 }
 
 .faq-header {
   color: black;
   flex: 1;
+  min-width: 280px;
 }
 
 .faq-badge {
@@ -38,7 +41,7 @@ min-height: 100vh;
 }
 
 .faq-header h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.1;
   margin-bottom: 24px;
   color: #111;
@@ -51,17 +54,19 @@ min-height: 100vh;
 
 .faq-list {
   flex: 1.2;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: clamp(12px, 2vw, 16px);
 }
 
 .faq-card {
   border: 1px solid #eee;
   border-radius: 12px;
-  padding: 24px;
+  padding: clamp(16px, 2vw, 24px);
   cursor: pointer;
   transition: all 0.3s ease;
+  background-color: #fafafa;
 }
 
 .faq-card.active {
@@ -77,14 +82,14 @@ min-height: 100vh;
 }
 
 .faq-question-row h3 {
-  font-size: 1.15rem;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
   margin: 0;
   color: #111;
   font-weight: 500;
 }
 
 .toggle-icon {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   color: #111;
   font-weight: 300;
 }
@@ -98,16 +103,50 @@ min-height: 100vh;
 .faq-answer p {
   color: #777;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
   margin: 0;
 }
 
+/* ================= RESPONSIVE ================= */
+
+/* Medium Tablets */
 @media (max-width: 992px) {
   .faq-container {
     flex-direction: column;
-    gap: 40px;
+    gap: clamp(20px, 4vw, 40px);
   }
+
   .faq-header h1 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 4.5vw, 2.2rem);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .faq-card {
+    padding: clamp(12px, 3vw, 20px);
+  }
+
+  .faq-question-row h3 {
+    font-size: clamp(0.95rem, 3vw, 1.05rem);
+  }
+
+  .toggle-icon {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 40px 15px;
+  }
+
+  .faq-header, .faq-list {
+    min-width: 100%;
+  }
+
+  .faq-header h1 {
+    font-size: clamp(1.5rem, 5vw, 1.8rem);
   }
 }
