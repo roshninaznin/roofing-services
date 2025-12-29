@@ -2,7 +2,6 @@ body {
   margin: 0;
 }
 
-/* ================= HERO ================= */
 .hero {
   position: relative;
   width: 100%;
@@ -34,7 +33,6 @@ body {
   z-index: -1;
 }
 
-/* ================= NAVBAR ================= */
 .hero-nav {
   position: absolute;
   top: clamp(20px, 3vw, 30px);
@@ -88,7 +86,6 @@ body {
   font-weight: 500;
 }
 
-/* ================= HERO CONTENT ================= */
 .hero-content {
   max-width: clamp(300px, 50vw, 600px);
   margin-top: clamp(60px, 8vw, 120px);
@@ -108,7 +105,6 @@ body {
   margin-bottom: clamp(20px, 3vw, 40px);
 }
 
-/* ================= BUTTONS ================= */
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -141,7 +137,6 @@ body {
   backdrop-filter: blur(6px);
 }
 
-/* ================= HERO BADGES ================= */
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
@@ -169,65 +164,68 @@ body {
   height: clamp(12px, 1.5vw, 16px);
 }
 
-/* ================= RESPONSIVE MEDIA ================= */
 
-/* Tablet */
 @media (max-width: 1024px) {
-  .hero-content {
-    margin-top: 80px;
+  .hero {
+    padding: 120px 40px 70px;
   }
 
-  .hero-badges {
-    justify-content: flex-start;
+  .hero-nav {
+    left: 40px;
+    right: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .hero {
-    padding: clamp(50px, 6vw, 80px) clamp(15px, 5vw, 40px) clamp(40px, 5vw, 60px);
-    flex-direction: column;
+    padding: 110px 20px 60px;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .hero-nav {
+    left: 20px;
+    right: 20px;
+  }
+
+  .nav-center {
+    width: 100%;
+    order: 3;
   }
 
   .hero-content {
     max-width: 100%;
-    margin-top: 60px;
-    text-align: center;
+    margin: 0 auto;
   }
 
   .hero-actions {
     justify-content: center;
   }
 
-  .nav-center {
+  .hero-badges {
     justify-content: center;
-    gap: 12px;
   }
 
-  .nav-nav-left, .nav-right {
-    flex-basis: 100%;
-    text-align: center;
-    margin-top: 10px;
+  .hero-content h1 {
+    font-size: 36px;
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: clamp(24px, 6vw, 36px);
+    font-size: 28px;
   }
 
   .hero-content p {
-    font-size: clamp(12px, 4vw, 16px);
+    font-size: 14px;
   }
 
-  .btn-primary, .btn-secondary {
+  .btn-primary,
+  .btn-secondary {
     width: 100%;
-    max-width: none;
-    padding: 12px 20px;
-  }
-
-  .hero-badges span {
-    font-size: clamp(12px, 3vw, 16px);
   }
 }
