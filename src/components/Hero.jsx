@@ -2,7 +2,6 @@ import heroImg from "/images/hero.png";
 import "../styles/Hero.css";
 
 export default function Hero() {
-  // Scroll function
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -35,7 +34,6 @@ export default function Hero() {
         </div>
       </nav>
 
-      {/* Hero Content */}
       <div className="hero-content">
         <h1>
           Find Your Perfect <br />
