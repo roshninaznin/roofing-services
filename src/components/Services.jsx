@@ -2,7 +2,7 @@ import "../styles/Services.css";
 
 export default function Services() {
   return (
-    <section className="services-section">
+    <section id="services-section" className="services-section">
       <div className="services-header">
         <h2>
           Comprehensive Roofing <br />
