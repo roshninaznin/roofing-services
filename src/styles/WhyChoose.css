@@ -13,7 +13,6 @@
   flex-wrap: wrap; 
 }
 
-/* IMAGE */
 .why-choose-image {
   flex: 1;
   min-width: 300px;
@@ -29,7 +28,6 @@
   display: block;
 }
 
-/* TEXT */
 .why-choose-text {
   flex: 1;
   min-width: 300px;
@@ -48,7 +46,6 @@
   line-height: 1.6;
 }
 
-/* FEATURES */
 .feature-list {
   display: flex;
   flex-direction: column;
@@ -88,7 +85,6 @@
   font-size: 0.95rem;
 }
 
-/* BUTTON */
 .book-now-btn {
   background-color: #0f1711; 
   color: white;
@@ -112,9 +108,7 @@
   font-size: 1.2rem;
 }
 
-/* =================== RESPONSIVE =================== */
 
-/* Tablet */
 @media (max-width: 1024px) {
   .why-choose-content {
     gap: 40px;
@@ -130,7 +124,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .why-choose-content {
     flex-direction: column;
@@ -161,7 +154,6 @@
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .why-choose-container {
     padding: 60px 20px;
