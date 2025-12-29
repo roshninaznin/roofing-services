@@ -3,14 +3,11 @@ import "../styles/About.css";
 export default function About() {
   return (
     <section id="about-section" className="about-section">
-      {/* Top Content */}
       <div className="about-container">
-        {/* Image */}
         <div className="about-image">
           <img src="/images/about.png" alt="Roof workers" />
         </div>
 
-        {/* Text */}
         <div className="about-content">
           <span className="about-badge">● Who We Are ?</span>
 
@@ -34,7 +31,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* Stats */}
       <div className="about-stats">
         <div>
           <h3>10K+</h3>
