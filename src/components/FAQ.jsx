@@ -30,7 +30,6 @@ export default function FAQ() {
   return (
     <section className="faq-section">
       <div className="faq-container">
-        {/* Left Side: Header */}
         <div className="faq-header">
           <div className="faq-badge">
             <span className="dot"></span> <b>FAQ</b>
@@ -43,7 +42,6 @@ export default function FAQ() {
           </p>
         </div>
 
-        {/* Right Side: Accordion */}
         <div className="faq-list">
           {faqData.map((item, index) => (
             <div 
