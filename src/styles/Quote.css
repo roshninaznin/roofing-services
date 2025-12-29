@@ -1,45 +1,51 @@
-.quote-section {
+.quote-section { 
   background-color: #f7f7f7;
-min-height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  padding: 100px 80px;  font-family: 'Inter', sans-serif;
+  padding: clamp(60px, 6vw, 100px) clamp(20px, 6vw, 80px);
+  font-family: 'Inter', sans-serif;
 }
 
+/* CONTAINER */
 .quote-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  gap: 60px;
+  gap: clamp(30px, 4vw, 60px);
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
+/* INFO SIDE */
 .quote-info {
   flex: 1;
+  min-width: 280px;
 }
 
 .quote-info h1 {
-  font-size: 2.8rem;
+  font-size: clamp(2rem, 4vw, 2.8rem);
   color: #1a1a1a;
   margin-bottom: 20px;
 }
 
 .subtitle {
   color: #666;
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
   line-height: 1.5;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
+/* BENEFITS LIST */
 .benefit-list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: clamp(20px, 2vw, 30px);
   margin-bottom: 40px;
 }
 
 .benefit-item {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
 }
 
@@ -67,11 +73,13 @@ min-height: 100vh;
   font-size: 0.95rem;
 }
 
+/* WHY BOX */
 .why-box {
   background: white;
-  padding: 30px;
+  padding: clamp(20px, 3vw, 30px);
   border-radius: 20px;
   max-width: 350px;
+  margin-bottom: 20px;
 }
 
 .why-box h4 {
@@ -99,34 +107,38 @@ min-height: 100vh;
   color: #888;
 }
 
+/* FORM CARD */
 .quote-form-card {
   flex: 1;
+  min-width: 280px;
   background: white;
-  padding: 40px;
+  padding: clamp(20px, 4vw, 40px);
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
 .quote-form-card h2 {
   margin-top: 0;
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
 }
 
 .quote-form-card p {
   color: #777;
-  font-size: 0.95rem;
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
   margin-bottom: 30px;
 }
 
+/* FORM ROWS */
 .form-row {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .form-group {
   margin-bottom: 20px;
   flex: 1;
-  background-color: white;
+  min-width: 120px;
 }
 
 .form-group label {
@@ -140,7 +152,7 @@ min-height: 100vh;
 .form-group input, 
 .form-group select, 
 .form-group textarea {
-  width: 90%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #4c4b4b;
   color: #212121;
@@ -163,6 +175,7 @@ textarea {
   resize: none;
 }
 
+/* CHECKBOX */
 .checkbox-group {
   display: flex;
   gap: 10px;
@@ -171,10 +184,13 @@ textarea {
   font-size: 0.85rem;
   color: #666;
 }
-.checkbox-group input{
+
+.checkbox-group input {
   background: #ffffff;
   border: 1px solid rgb(247, 3, 3);
 }
+
+/* SUBMIT BUTTON */
 .submit-btn {
   width: 100%;
   padding: 15px;
@@ -191,8 +207,84 @@ textarea {
   gap: 10px;
 }
 
-@media (max-width: 900px) {
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .quote-container {
+    gap: 40px;
+  }
+
+  .quote-form-card {
+    padding: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
   .quote-container {
     flex-direction: column;
+  }
+
+  .quote-info h1 {
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .benefit-item {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .why-box {
+    margin: 0 auto 20px;
+  }
+
+  .quote-form-card {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .quote-section {
+    padding: 50px 15px;
+  }
+
+  .quote-info h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .benefit-item h3 {
+    font-size: 1rem;
+  }
+
+  .benefit-item p {
+    font-size: 0.85rem;
+  }
+
+  .why-box {
+    padding: 20px;
+  }
+
+  .quote-form-card {
+    padding: 20px;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+    padding: 12px 20px;
   }
 }
