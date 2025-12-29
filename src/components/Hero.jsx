@@ -2,9 +2,17 @@ import heroImg from "/images/hero.png";
 import "../styles/Hero.css";
 
 export default function Hero() {
+  // Scroll function
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section className="hero">
-          <img src={heroImg} alt="Hero" className="hero-bg" />
+    <section id="hero" className="hero">
+      <img src={heroImg} alt="Hero" className="hero-bg" />
       <div className="hero-overlay"></div>
 
       {/* Navbar */}
@@ -14,12 +22,12 @@ export default function Hero() {
         </div>
 
         <div className="nav-center">
-          <button className="active">Home</button>
-          <button>Services</button>
-          <button>Companies</button>
-          <button>About</button>
-          <button>Contacts</button>
-          <button>Reviews</button>
+          <button className="active" onClick={() => scrollToSection("hero")}>Home</button>
+          <button onClick={() => scrollToSection("services-section")}>Services</button>
+          <button onClick={() => scrollToSection("companies-section")}>Companies</button>
+          <button onClick={() => scrollToSection("about-section")}>About</button>
+          <button onClick={() => scrollToSection("footer-section")}>Contacts</button>
+          <button onClick={() => scrollToSection("testimonials-section")}>Reviews</button>
         </div>
 
         <div className="nav-right">
@@ -47,9 +55,9 @@ export default function Hero() {
         </div>
 
         <div className="hero-badges">
-          <span><img className="imag" src="/images/Frame1.png"/>   Fast Response</span>
-          <span><img className="imag" src="/images/Frame2.png"/>   Verified Contractors</span>
-          <span><img className="imag" src="/images/Frame3.png"/>   100% Free Services</span>
+          <span><img className="imag" src="/images/Frame1.png"/> Fast Response</span>
+          <span><img className="imag" src="/images/Frame2.png"/> Verified Contractors</span>
+          <span><img className="imag" src="/images/Frame3.png"/> 100% Free Services</span>
         </div>
       </div>
     </section>
